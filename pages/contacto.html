@@ -47,35 +47,40 @@
       <main class="bg-secondary bg-opacity-10">
 
         <!--Pagina de informacion-->
-        <div class="main_cont">
+
+        <div class="card">
+          <div class="card-body">
             <h1>Contactanos!!</h1>
-            <img src="../images/telefono-carro.jpg" alt="">
+          </div>
+          <img src="../images/telefono-carro.jpg" class="card-img-bottom" alt="...">
         </div>
 
         <!--Inicia el formulario-->
         <div class="cont">
-            <form action="">
-                <div class="cont">
-                    <h3>Completa el siguiente formulario y nos pondremos en contacto lo antes posible</h3>
-                    <label for="">Nombre</label>
-                    <div class="contact">
-                        <input type="nombre" placeholder="Escriba su nombre">
-                    </div>
-                    <label for="">Correo</label>
-                    <div class="contact">
-
-                        <input type="email" name="" id="" placeholder="Escriba su correo">
-                    </div>
-                    <label for="">Mensaje</label>
-                    <div class="contact">
-                        <textarea name="" id="" cols="60" rows="5" placeholder="Escriba un mensaje"></textarea>
-                    </div>
-                    <div class="contact">
-                        <input type="submit" value="Enviar">
-                    </div>
-
-                </div>
-
+          <div class="">
+            <form class="m-5 p-3">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Nunca compartiremos tus datos con nadie.</div>
+              </div>
+  
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Mensaje</label>
+              </div>
+              <div class="mb-3 form-check ">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+                  </div>
+          </div>
         </div>
         <!--Termina formulario-->
         </form>
