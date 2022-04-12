@@ -1,0 +1,399 @@
+/*Configuracion general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  background-color: rgb(255, 255, 255);
+}
+
+body {
+  width: auto;
+  height: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.grid-layout {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 25% auto 25%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+main {
+  padding-bottom: 2em;
+  grid-area: main;
+  grid-row: 2;
+  grid-column: 1 2 3;
+}
+
+/*termina general*/
+
+/*Header*/
+
+header {
+  grid-area: header;
+  grid-row: 1;
+  grid-column: 1 2 3;
+  padding-bottom: 4em;
+  background-color: black;
+  height: 15em;
+}
+
+.menu {
+  padding-bottom: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.logo {
+  height: 10em;
+  width: 13em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  grid-area: logo;
+}
+
+.pages {
+  grid-area: nav;
+}
+
+nav {
+  ul {
+    li {
+      a {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 1.3em;
+        padding: 0.4em;
+      }
+    }
+  }
+}
+
+/*termina Header*/
+
+/*Footer*/
+
+footer {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  grid-area: footer;
+  grid-row: 3;
+  grid-column: 1 2 3;
+
+  p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.678);
+    font-size: 1em;
+
+    a {
+      text-decoration: seashell;
+      color: rgba(245, 245, 245, 0.678);
+      font-size: 1em;
+    }
+  }
+}
+
+/*Termina footer*/
+
+/*Main en general*/
+p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: justify;
+  margin: 0;
+  padding: 0.5em;
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+}
+
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 1em;
+  color: rgb(0, 0, 0);
+  font-size: 2em;
+}
+
+h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 1em;
+  color: rgb(0, 0, 0);
+  font-size: 1.8em;
+}
+
+h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 1em;
+  color: rgb(0, 0, 0);
+}
+
+/*Termna main*/
+
+/*Index*/
+.home {
+  margin: 1.5em;
+  padding: 1.2em;
+  display: flex;
+  background-color: white;
+
+  text-align: center;
+}
+
+.MainVid {
+  margin: 5vh 5vh 5vh 5vh;
+}
+
+#MainVid {
+  width: 30em;
+  text-align: center;
+}
+
+/* Termina index*/
+
+/*Informacion*/
+
+.inf {
+  margin: 0.5em 3em 0.5em 3em;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.info {
+  color: black;
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  margin: 2em 1em 2em 1em;
+  grid-area: info;
+  background-color: white;
+}
+
+.info_2 {
+  color: black;
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  margin: 2em 1em 2em 1em;
+  grid-area: info_2;
+  background-color: white;
+}
+
+.info_3 {
+  color: black;
+  grid-area: info_3;
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  margin: 2em 1em 2em 1em;
+  background-color: white;
+}
+
+/*Termina informacion*/
+
+/*Ubicacion*/
+
+.mapa {
+  text-align: center;
+  margin: 0em 10em;
+  padding: 2em;
+  background-color: white;
+  grid-area: ubi;
+
+  p {
+    text-align: center;
+  }
+}
+
+.fact {
+  margin: 1em 10em;
+  padding: 1.2em;
+  text-align: center;
+  background-color: white;
+  flex-direction: column;
+  grid-area: fact;
+
+  p {
+    color: black;
+    text-align: justify;
+    align-content: center;
+    font-size: 1em;
+  }
+
+  img {
+    width: 30em;
+  }
+}
+
+.grid-ubi {
+  display: grid;
+  height: auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+/*Termina ubicacion*/
+
+/*Galeria*/
+img {
+  width: 30em;
+}
+
+.img_block {
+  width: 65em;
+  background-color: white;
+  margin: 1em;
+}
+
+.img_sub {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.img_1 {
+  padding: 0em 1em 0em 1em;
+  grid-area: img_1;
+}
+
+.img_2 {
+  padding: 0em 1em 0em 1em;
+  grid-area: img_2;
+}
+
+/*Termina Galeria*/
+
+/*Informacion*/
+.main_cont {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  background-color: rgb(110, 110, 110);
+  padding: 5em;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: whitesmoke;
+    grid-area: title;
+  }
+
+  img {
+    grid-area: img;
+    margin: 5em;
+  }
+}
+
+.contact {
+  margin: 0.5em 10em;
+  justify-content: center;
+}
+
+/*Termina informacion*/
+
+/*Media query*/
+
+@media (max-width: 1200px) {
+  header,
+  .men,
+  footer {
+    min-width: 625px;
+  }
+
+  .home {
+    min-width: 645px;
+    flex-direction: column;
+  }
+
+  #MainVid {
+    min-width: 500px;
+  }
+
+  .grid-ubi {
+    grid-template-areas: "ubi ubi" "fact fact";
+  }
+
+  .fact {
+    img {
+      min-width: 500px;
+    }
+
+    p {
+      min-width: 500px;
+    }
+  }
+
+  .inf {
+    grid-template-areas: "info info info" "info_2 info_2 info_2" "info_3 info_3 info_3";
+  }
+
+  .info p,
+  .info_2 p,
+  .info_3 p {
+    min-width: 500px;
+  }
+
+  .img_sub {
+    grid-template-areas: "img_1 img_1" "img_2 img_2";
+  }
+
+  .img_1 img,
+  .img_2 img {
+    width: 50em;
+  }
+
+  .main_cont {
+    grid-template-areas: "title title" "img img";
+
+    img {
+      min-width: 500px;
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  .grid-ubi {
+    grid-template-areas: "ubi fact" "ubi fact";
+  }
+
+  .mapa {
+    min-width: 850px;
+    margin: 1em 5em;
+  }
+
+  .fact {
+    min-width: 850px;
+    margin: 1em 0em;
+  }
+
+  .inf {
+    grid-template-areas: "info info info_2 info_2" " . . . ." ". info_3 info_3 .";
+  }
+
+  .img_sub {
+    grid-template-areas: "img_1 img_2" "img_1 img_2";
+  }
+
+  .main_cont {
+    grid-template-areas: "title img" "title img";
+  }
+}

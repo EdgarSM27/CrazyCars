@@ -2,13 +2,14 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   list-style: none;
 }
 
 html {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 
 body {
@@ -19,28 +20,37 @@ body {
 }
 
 .grid-layout {
+  display: -ms-grid;
   display: grid;
   height: 100%;
-  grid-template-columns: 25% auto 25%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
+  -ms-grid-columns: 25% auto 25%;
+      grid-template-columns: 25% auto 25%;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "header header header" "main main main" "footer footer footer";
 }
 
 main {
   padding-bottom: 2em;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: main;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  grid-column: 1 2 3;
 }
 
 /*termina general*/
-
 /*Header*/
-
 header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: header;
-
+  -ms-grid-row: 1;
+  grid-row: 1;
+  grid-column: 1 2 3;
   padding-bottom: 4em;
   background-color: black;
   height: 15em;
@@ -65,91 +75,88 @@ header {
 }
 
 nav ul li a {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.3em;
   padding: 0.4em;
 }
 
 /*termina Header*/
-
 /*Footer*/
-
 footer {
   text-align: center;
   font-weight: bold;
   text-decoration: none;
   padding-top: 0.4em;
   padding-bottom: 0.4em;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: footer;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  grid-column: 1 2 3;
 }
 
 footer p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
   color: rgba(245, 245, 245, 0.678);
   font-size: 1em;
 }
 
 footer p a {
-  text-decoration: seashell;
+  -webkit-text-decoration: seashell;
+          text-decoration: seashell;
   color: rgba(245, 245, 245, 0.678);
   font-size: 1em;
 }
 
 /*Termina footer*/
-
 /*Main en general*/
 p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: justify;
   margin: 0;
   padding: 0.5em;
-  color: rgb(0, 0, 0);
+  color: black;
   font-size: 1.5em;
 }
 
 h1 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
   margin: 0;
   padding: 1em;
-  color: rgb(0, 0, 0);
+  color: black;
   font-size: 2em;
 }
 
 h2 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
   margin: 0;
   padding: 1em;
-  color: rgb(0, 0, 0);
+  color: black;
   font-size: 1.8em;
 }
 
 h3 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
   margin: 0;
   padding: 1em;
-  color: rgb(0, 0, 0);
+  color: black;
 }
 
 /*Termna main*/
-
 /*Index*/
 .home {
   margin: 1.5em;
   padding: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: white;
-
   text-align: center;
 }
 
@@ -162,22 +169,16 @@ h3 {
   text-align: center;
 }
 
-.fact p {
-  color: black;
-  text-align: justify;
-  align-content: center;
-  font-size: 1em;
-}
-
 /* Termina index*/
-
 /*Informacion*/
-
 .inf {
   margin: 0.5em 3em 0.5em 3em;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
 }
 
 .info {
@@ -205,9 +206,7 @@ h3 {
 }
 
 /*Termina informacion*/
-
 /*Ubicacion*/
-
 .mapa {
   text-align: center;
   margin: 0em 10em;
@@ -225,8 +224,19 @@ h3 {
   padding: 1.2em;
   text-align: center;
   background-color: white;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   grid-area: fact;
+}
+
+.fact p {
+  color: black;
+  text-align: justify;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 1em;
 }
 
 .fact img {
@@ -234,14 +244,16 @@ h3 {
 }
 
 .grid-ubi {
+  display: -ms-grid;
   display: grid;
   height: auto;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
 }
 
 /*Termina ubicacion*/
-
 /*Galeria*/
 img {
   width: 30em;
@@ -254,10 +266,15 @@ img {
 }
 
 .img_sub {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
 }
 
 .img_1 {
@@ -271,21 +288,29 @@ img {
 }
 
 /*Termina Galeria*/
-
 /*Informacion*/
 .main_cont {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  background-color: rgb(110, 110, 110);
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  background-color: #6e6e6e;
   padding: 5em;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .main_cont h1 {
   color: whitesmoke;
   grid-area: title;
 }
+
 .main_cont img {
   grid-area: img;
   margin: 5em;
@@ -293,59 +318,55 @@ img {
 
 .contact {
   margin: 0.5em 10em;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*Termina informacion*/
-
 /*Media query*/
-
 @media (max-width: 1200px) {
   header,
   .men,
   footer {
     min-width: 625px;
   }
-
   .home {
     min-width: 645px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   #MainVid {
     min-width: 500px;
   }
-
   .grid-ubi {
-    grid-template-areas: "ubi ubi" "fact fact";
+        grid-template-areas: "ubi ubi" "fact fact";
   }
-
   .fact img {
     min-width: 500px;
   }
   .fact p {
     min-width: 500px;
   }
-
   .inf {
-    grid-template-areas: "info info info" "info_2 info_2 info_2" "info_3 info_3 info_3";
+        grid-template-areas: "info info info" "info_2 info_2 info_2" "info_3 info_3 info_3";
   }
-
   .info p,
   .info_2 p,
   .info_3 p {
     min-width: 500px;
   }
-
   .img_sub {
-    grid-template-areas: "img_1 img_1" "img_2 img_2";
+        grid-template-areas: "img_1 img_1" "img_2 img_2";
   }
   .img_1 img,
   .img_2 img {
     width: 50em;
   }
   .main_cont {
-    grid-template-areas: "title title" "img img";
+        grid-template-areas: "title title" "img img";
   }
   .main_cont img {
     min-width: 500px;
@@ -354,27 +375,24 @@ img {
 
 @media (min-width: 1201px) {
   .grid-ubi {
-    grid-template-areas: "ubi fact" "ubi fact";
+        grid-template-areas: "ubi fact" "ubi fact";
   }
-
   .mapa {
     min-width: 850px;
     margin: 1em 5em;
   }
-
   .fact {
     min-width: 850px;
     margin: 1em 0em;
   }
-
   .inf {
-    grid-template-areas: "info info info_2 info_2" " . . . ." ". info_3 info_3 .";
+        grid-template-areas: "info info info_2 info_2" " . . . ." ". info_3 info_3 .";
   }
-
   .img_sub {
-    grid-template-areas: "img_1 img_2" "img_1 img_2";
+        grid-template-areas: "img_1 img_2" "img_1 img_2";
   }
   .main_cont {
-    grid-template-areas: "title img" "title img";
+        grid-template-areas: "title img" "title img";
   }
 }
+/*# sourceMappingURL=style.css.map */
