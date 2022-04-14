@@ -1,0 +1,30 @@
+.home {
+    margin: 1.5em;
+    padding: 1.2em;
+    display: flex;
+    background-color: white;
+  
+    text-align: center;
+  }
+  
+  .MainVid {
+    margin: 5vh 5vh 5vh 5vh;
+  }
+  
+  #MainVid {
+    width: 30em;
+    text-align: center;
+  }
+
+  @media (max-width: 1200px) {
+
+    .home {
+      min-width: 645px;
+      flex-direction: column;
+    }
+  
+    #MainVid {
+      min-width: 500px;
+    }
+  
+}

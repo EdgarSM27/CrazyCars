@@ -1,0 +1,29 @@
+footer {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    grid-area: footer;
+    grid-row: 3;
+    grid-column: 1 2 3;
+  
+    p {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      text-align: center;
+      color: rgba(245, 245, 245, 0.678);
+      font-size: 1em;
+  
+      a {
+        text-decoration: seashell;
+        color: rgba(245, 245, 245, 0.678);
+        font-size: 1em;
+      }
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    footer {
+      min-width: 625px;
+    } }
