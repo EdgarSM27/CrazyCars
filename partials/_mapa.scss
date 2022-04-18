@@ -15,8 +15,8 @@ $widths: ("widht_1":500px, "widht_2":850px );
   }
   
   .fact {
-    margin: 1em 10em;
-    padding: 1.2em;
+    margin: 0em 10em;
+    padding: 2em;
     text-align: center;
     background-color: $bg-color;
     flex-direction: column;
@@ -68,5 +68,5 @@ $widths: ("widht_1":500px, "widht_2":850px );
     
       .fact {
         min-width: map-get($widths , "widht_2" );
-        margin: 1em 0em;
+        margin: 1em 5em;
       } }
