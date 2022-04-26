@@ -76,7 +76,7 @@ h3 {
 }
 
 @media (max-width: 1200px) {
-  main {
+  html {
     min-width: 320px;
   }
 }
@@ -171,9 +171,6 @@ footer p a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  #MainVid {
-    min-width: 500px;
   }
 }
 
