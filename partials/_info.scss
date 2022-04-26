@@ -33,12 +33,6 @@
   .inf {
     grid-template-areas: "info info info" "info_2 info_2 info_2" "info_3 info_3 info_3";
   }
-
-  .info p,
-  .info_2 p,
-  .info_3 p {
-    min-width: 125px;
-  }
 }
 
 @media (min-width: 1201px) {

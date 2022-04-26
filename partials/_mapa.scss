@@ -48,15 +48,7 @@ $widths: (
     grid-template-areas: "ubi ubi" "fact fact";
   }
 
-  .fact {
-    img {
-      min-width: map-get($widths, "widht_1");
-    }
 
-    p {
-      min-width: map-get($widths, "widht_1");
-    }
-  }
 }
 
 @media (min-width: 1201px) {
@@ -65,12 +57,12 @@ $widths: (
   }
 
   .mapa {
-    min-width: map-get($widths, "widht_2");
+    
     margin: 1em 5em;
   }
 
   .fact {
-    min-width: map-get($widths, "widht_2");
+    
     margin: 1em 5em;
   }
 }
