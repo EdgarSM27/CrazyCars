@@ -1,73 +1,76 @@
 $bg-color: white;
-$widths: ("widht_1":125px, "widht_2":212.5px );
-
+$widths: (
+  "widht_1": 125px,
+  "widht_2": 212.5px,
+);
 
 .mapa {
-    text-align: center;
-    margin: 0em 10em;
-    padding: 2em;
-    background-color: $bg-color;
-    grid-area: ubi;
-  
-    p {
-      text-align: center;
-    }
-  }
-  
-  .fact {
-    margin: 0em 10em;
-    padding: 2em;
-    text-align: center;
-    background-color: $bg-color;
-    flex-direction: column;
-    grid-area: fact;
-  
-    p {
-      color: black;
-      text-align: justify;
-      align-content: center;
-      font-size: 1em;
+  text-align: center;
+  margin: 0em 10em;
+  padding: 2em;
+  background-color: $bg-color;
+  grid-area: ubi;
 
-    }
-  
-    img {
-      width: 30em;
-    }
+  p {
+    text-align: center;
   }
-  
+}
+
+.fact {
+  margin: 0em 10em;
+  padding: 2em;
+  text-align: center;
+  background-color: $bg-color;
+  flex-direction: column;
+  grid-area: fact;
+
+  p {
+    color: black;
+    text-align: justify;
+    align-content: center;
+    font-size: 1em;
+  }
+
+  img {
+    width: 30em;
+  }
+}
+
+.grid-ubi {
+  display: grid;
+  height: auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+@media (max-width: 1200px) {
   .grid-ubi {
-    display: grid;
-    height: auto;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-areas: "ubi ubi" "fact fact";
   }
 
-  @media (max-width: 1200px) {
-    .grid-ubi {
-      grid-template-areas: "ubi ubi" "fact fact";
+  .fact {
+    img {
+      min-width: map-get($widths, "widht_1");
     }
-  
-    .fact {
-      img {
-        min-width: map-get($widths , "widht_1" );
-      }
-  
-      p {
-        min-width: map-get($widths , "widht_1" );
-      }
-    } }
-  
-    @media (min-width: 1201px) {
-      .grid-ubi {
-        grid-template-areas: "ubi fact" "ubi fact";
-      }
-    
-      .mapa {
-        min-width: map-get($widths , "widht_2" );
-        margin: 1em 5em;
-      }
-    
-      .fact {
-        min-width: map-get($widths , "widht_2" );
-        margin: 1em 5em;
-      } }
+
+    p {
+      min-width: map-get($widths, "widht_1");
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  .grid-ubi {
+    grid-template-areas: "ubi fact" "ubi fact";
+  }
+
+  .mapa {
+    min-width: map-get($widths, "widht_2");
+    margin: 1em 5em;
+  }
+
+  .fact {
+    min-width: map-get($widths, "widht_2");
+    margin: 1em 5em;
+  }
+}

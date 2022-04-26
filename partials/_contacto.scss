@@ -1,24 +1,24 @@
 .main_cont {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    background-color: rgb(110, 110, 110);
-    padding: 5em;
-    justify-content: center;
-    align-items: center;
-  
-    h1 {
-      color: whitesmoke;
-      grid-area: title;
-    }
-  
-    img {
-      grid-area: img;
-      margin: 5em;
-    }
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  background-color: rgb(110, 110, 110);
+  padding: 5em;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: whitesmoke;
+    grid-area: title;
   }
-  
-  .contact {
-    margin: 0.5em 10em;
-    justify-content: center;
+
+  img {
+    grid-area: img;
+    margin: 5em;
   }
+}
+
+.contact {
+  margin: 0.5em 10em;
+  justify-content: center;
+}
