@@ -1,17 +1,22 @@
 .main_cont {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  background-color: rgb(110, 110, 110);
-  padding: 5em;
-  justify-content: center;
-  align-items: center;
-
-  h1 {
-    color: whitesmoke;
-    grid-area: title;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    background-color: rgb(110, 110, 110);
+    padding: 5em;
+    justify-content: center;
+    align-items: center;
+  
+    h1 {
+      color: whitesmoke;
+      grid-area: title;
+    }
+  
+    img {
+      grid-area: img;
+      margin: 5em;
+    }
   }
-<<<<<<< HEAD
   
   .contact {
     margin: 0.5em 10em;
@@ -29,16 +34,3 @@
       margin: 0.02em 4.1322em;
     }
   }
-=======
-
-  img {
-    grid-area: img;
-    margin: 5em;
-  }
-}
-
-.contact {
-  margin: 0.5em 10em;
-  justify-content: center;
-}
->>>>>>> f9a2994c658e1fdb2ee81a02dceafe1a95779f95

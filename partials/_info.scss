@@ -1,5 +1,4 @@
 .inf {
-<<<<<<< HEAD
     margin: 0.5em 3em 0.5em 3em;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -64,46 +63,3 @@
   padding: 0.619em;
   margin: 0.826em 0.0413em 0.826em 0.0413em;
 }}
-=======
-  margin: 0.5em 3em 0.5em 3em;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto;
-}
-
-.info {
-  color: black;
-  padding: 1.5em 1.5em 1.5em 1.5em;
-  margin: 2em 1em 2em 1em;
-  grid-area: info;
-  background-color: white;
-}
-
-.info_2 {
-  color: black;
-  padding: 1.5em 1.5em 1.5em 1.5em;
-  margin: 2em 1em 2em 1em;
-  grid-area: info_2;
-  background-color: white;
-}
-
-.info_3 {
-  color: black;
-  grid-area: info_3;
-  padding: 1.5em 1.5em 1.5em 1.5em;
-  margin: 2em 1em 2em 1em;
-  background-color: white;
-}
-
-@media (max-width: 1200px) {
-  .inf {
-    grid-template-areas: "info info info" "info_2 info_2 info_2" "info_3 info_3 info_3";
-  }
-}
-
-@media (min-width: 1201px) {
-  .inf {
-    grid-template-areas: "info info info_2 info_2" " . . . ." ". info_3 info_3 .";
-  }
-}
->>>>>>> f9a2994c658e1fdb2ee81a02dceafe1a95779f95

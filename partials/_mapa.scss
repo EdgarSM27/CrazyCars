@@ -1,25 +1,18 @@
 $bg-color: white;
-<<<<<<< HEAD
 $widths: ("widht_1":206.61px, "widht_2":351.23px );
 
-=======
-$widths: (
-  "widht_1": 125px,
-  "widht_2": 212.5px,
-);
->>>>>>> f9a2994c658e1fdb2ee81a02dceafe1a95779f95
 
 .mapa {
-  text-align: center;
-  margin: 0em 10em;
-  padding: 2em;
-  background-color: $bg-color;
-  grid-area: ubi;
-
-  p {
     text-align: center;
+    margin: 0em 10em;
+    padding: 2em;
+    background-color: $bg-color;
+    grid-area: ubi;
+  
+    p {
+      text-align: center;
+    }
   }
-<<<<<<< HEAD
   
   .fact {
     margin: 0em 10em;
@@ -109,57 +102,3 @@ $widths: (
     }
   }
   
-=======
-}
-
-.fact {
-  margin: 0em 10em;
-  padding: 2em;
-  text-align: center;
-  background-color: $bg-color;
-  flex-direction: column;
-  grid-area: fact;
-
-  p {
-    color: black;
-    text-align: justify;
-    align-content: center;
-    font-size: 1em;
-  }
-
-  img {
-    width: 30em;
-  }
-}
-
-.grid-ubi {
-  display: grid;
-  height: auto;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-}
-
-@media (max-width: 1200px) {
-  .grid-ubi {
-    grid-template-areas: "ubi ubi" "fact fact";
-  }
-
-
-}
-
-@media (min-width: 1201px) {
-  .grid-ubi {
-    grid-template-areas: "ubi fact" "ubi fact";
-  }
-
-  .mapa {
-    
-    margin: 1em 5em;
-  }
-
-  .fact {
-    
-    margin: 1em 5em;
-  }
-}
->>>>>>> f9a2994c658e1fdb2ee81a02dceafe1a95779f95
