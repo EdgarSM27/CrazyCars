@@ -39,11 +39,32 @@ header {
   }
   
 
-  @media (max-width: 1200px) {
-    header, .menu{
-      min-width: 312.5px;
+  @media (max-width: 400px) {
+    header {
+      padding-bottom: 0.6818em;
+      height: 7.438em;
     }
   
-    
-
+    .logo {
+      height: 4.66em;
+      width: 5.37em;
+      margin-top: 0.41em;
+      margin-bottom: 0.41em;
+    }
+  
+    nav {
+      ul {
+        li {
+          a {
+            font-size: 0.6em;
+            padding: 0.16em;
+          }
+        }
+      }
+    }
+  
+    header,
+    .menu {
+      min-width: 258.26px;
+    }
   }

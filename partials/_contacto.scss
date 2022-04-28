@@ -22,3 +22,15 @@
     margin: 0.5em 10em;
     justify-content: center;
   }
+  @media (max-width: 400px) {
+    .main_cont {
+      padding: 2.06em;
+  
+      img {
+        margin: 2.06em;
+      }
+    }
+    .contact {
+      margin: 0.02em 4.1322em;
+    }
+  }

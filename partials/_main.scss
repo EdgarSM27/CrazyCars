@@ -45,3 +45,31 @@ main {
     color: $text_color;
   }
   
+  @media (max-width: 400px) {
+    main {
+      padding-bottom: 0.826em;
+    }
+  
+    p {
+      margin: 0;
+      padding: 0.2066em;
+      font-size: 0.6198em;
+    }
+  
+    h1 {
+      margin: 0;
+      padding: 0.4132em;
+      font-size: 0.8264em;
+    }
+  
+    h2 {
+      margin: 0;
+      padding: 0.4132em;
+      font-size: 0.7438em;
+    }
+  
+    h3 {
+      margin: 0;
+      padding: 0.4132em;
+    }
+  }

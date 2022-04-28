@@ -1,5 +1,5 @@
 $bg-color: white;
-$widths: ("widht_1":250px, "widht_2":425px );
+$widths: ("widht_1":206.61px, "widht_2":351.23px );
 
 
 .mapa {
@@ -27,14 +27,29 @@ $widths: ("widht_1":250px, "widht_2":425px );
       text-align: justify;
       align-content: center;
       font-size: 1em;
-      
     }
   
     img {
       width: 30em;
     }
   }
-  
+  .grid-ubi {
+    grid-template-areas: "ubi fact" "ubi fact";
+  }
+
+  .mapa {
+    min-width: map-get($widths , "widht_1" );
+    margin: 1em 1em;
+  }
+.frmapa{
+  width: 50em;
+  height: 25em;
+  min-width: map-get($widths , "widht_1" );
+}
+  .fact {
+    min-width: map-get($widths , "widht_2" );
+    margin: 1em 1em;
+  } 
   .grid-ubi {
     display: grid;
     height: auto;
@@ -42,32 +57,48 @@ $widths: ("widht_1":250px, "widht_2":425px );
     grid-template-rows: auto auto;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 400px) {
     .grid-ubi {
       grid-template-areas: "ubi ubi" "fact fact";
     }
   
     .fact {
       img {
-        min-width: map-get($widths , "widht_1" );
+        min-width: map-get($widths, "widht_1");
       }
   
       p {
-        min-width: map-get($widths , "widht_1" );
+        min-width: map-get($widths, "widht_1");
       }
-    } }
+    }
+    .mapa {
+      text-align: center;
+      padding: 1em;
+    }
+    .frmapa{
+      width: 12.39em;
+      height: 10em;
+      min-width: map-get($widths , "widht_1" );
+    }
   
-    @media (min-width: 1201px) {
-      .grid-ubi {
-        grid-template-areas: "ubi fact" "ubi fact";
-      }
+    .fact {
     
-      .mapa {
-        min-width: map-get($widths , "widht_2" );
-        margin: 1em 5em;
+      padding: 0.826em;
+      p {
+        font-size: 0.4132em;
       }
-    
-      .fact {
-        min-width: map-get($widths , "widht_2" );
-        margin: 1em 5em;
-      } }
+      img {
+        width: 12.39em;
+      }
+    }
+    .fact {
+      img {
+        min-width: map-get($widths, "widht_1");
+      }
+  
+      p {
+        min-width: map-get($widths, "widht_1");
+      }
+    }
+  }
+  

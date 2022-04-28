@@ -23,7 +23,18 @@ footer {
     }
   }
   
-  @media (max-width: 1200px) {
+  @media (max-width: 400px) {
     footer {
-      min-width: 312.5px;
-    } }
+      padding-top: 0.016em;
+      padding-bottom: 0.16em;
+  
+      min-width: 253.26px;
+  
+      p {
+        font-size: 1em;
+        a {
+          font-size: 1em;
+        }
+      }
+    }
+  }

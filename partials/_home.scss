@@ -1,29 +1,35 @@
 .home {
-    margin: 1.5em;
-    display: flex;
-    background-color: white;
-  
-    text-align: center;
+  margin: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  text-align: center;
+}
+
+.MainVid {
+  margin: 8vh;
+}
+
+#MainVid {
+  width: 38.5vh;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .home {
+    margin: 0.61em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 266.52px;
   }
-  
   .MainVid {
-    margin: 5em;
+    margin: 1.0661em;
   }
-  
   #MainVid {
-    width: 30em;
-    text-align: center;
+    width: 12.39em;
+    min-width: 206.61px;
   }
-
-  @media (max-width: 1200px) {
-
-    .home {
-      min-width: 322.5px;
-      flex-direction: column;
-    }
-  
-    #MainVid {
-      min-width: 500px;
-    }
-  
 }
