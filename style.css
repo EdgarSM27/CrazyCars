@@ -179,6 +179,10 @@ footer p a {
   text-align: center;
 }
 
+#MainVid img {
+  width: 30em;
+}
+
 @media (max-width: 400px) {
   .home {
     margin: 0.61em;
@@ -192,6 +196,10 @@ footer p a {
     margin: 1.0661em;
   }
   #MainVid {
+    width: 12.39em;
+    min-width: 206.61px;
+  }
+  #MainVid img {
     width: 12.39em;
     min-width: 206.61px;
   }
@@ -371,12 +379,6 @@ footer p a {
   }
   .fact img {
     width: 12.39em;
-  }
-  .fact img {
-    min-width: 206.61px;
-  }
-  .fact p {
-    min-width: 206.61px;
   }
 }
 

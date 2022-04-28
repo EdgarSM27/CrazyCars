@@ -91,14 +91,5 @@ $widths: ("widht_1":206.61px, "widht_2":351.23px );
         width: 12.39em;
       }
     }
-    .fact {
-      img {
-        min-width: map-get($widths, "widht_1");
-      }
-  
-      p {
-        min-width: map-get($widths, "widht_1");
-      }
-    }
   }
   
