@@ -1,13 +1,21 @@
 .home {
+<<<<<<< HEAD
   margin: 2vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: white;
+=======
+  margin: 1.5em;
+  display: flex;
+  background-color: white;
+
+>>>>>>> f9a2994c658e1fdb2ee81a02dceafe1a95779f95
   text-align: center;
 }
 
 .MainVid {
+<<<<<<< HEAD
   margin: 8vh;
 }
 
@@ -31,5 +39,18 @@
   #MainVid {
     width: 12.39em;
     min-width: 206.61px;
+=======
+  margin: 5em;
+}
+
+#MainVid {
+  width: 30em;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .home {
+    flex-direction: column;
+>>>>>>> f9a2994c658e1fdb2ee81a02dceafe1a95779f95
   }
 }
