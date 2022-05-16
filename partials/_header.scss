@@ -2,9 +2,7 @@ header {
     grid-area: header;
     grid-row: 1;
     grid-column: 1 2 3;
-    padding-bottom: 4em;
     background-color: black;
-    height: 18em;
   }
   
   .menu {
@@ -40,11 +38,6 @@ header {
   
 
   @media (max-width: 400px) {
-    header {
-      padding-bottom: 0.6818em;
-      height: 7.438em;
-    }
-  
     .logo {
       height: 4.66em;
       width: 5.37em;
